@@ -1,28 +1,24 @@
+import React from 'react';
+import Link from 'next/link';
 
-
-import { MenuIcon, SidebarCloseIcon, X } from "lucide-react";
-import { useState } from "react";
-
-export default function FooterComponent({}) {
-   
-    return (
-        <div className=" p-8 bg-slate-300 flex  overflow-hidden w-full items-center sm:max-h-[80px] flex-col" >
-            <div className="container flex sm:flex-row  gap-x-4 justify-center w-full items-center">
-                <div className=" text-white  mr-auto font-bold text-xl" >Solomon</div>
-
-                <ul className=" text-white hidden sm:flex  flex-row gap-y-4 sm:gap-x-4 sm:bg-inherit" >
-                <li>Home</li>
-                    <li>Project</li>
-                    <li>About</li>
-                    <li className=" hover:scale-90 transition  ease-lineart">Contact</li>
-                   
-                </ul>
-               
-            </div>
-            <div>
-            </div>
+export default function FooterComponen() {
+  return (
+    <footer className="bg-gray-800 text-white py-8">
+      <div className="container mx-auto text-center">
+        <p className="text-xl font-semibold">Connect with Me</p>
+        <div className="flex justify-center gap-4 mt-4">
+          <Link href="https://github.com/yourusername">
+            <i className="fab fa-github text-2xl cursor-pointer hover:text-gray-500 transition-colors"></i>
+          </Link>
+          <Link href="https://linkedin.com/in/yourusername">
+            <i className="fab fa-linkedin-in text-2xl cursor-pointer hover:text-gray-500 transition-colors"></i>
+          </Link>
+          <Link href="mailto:youremail@example.com">
+            <i className="fas fa-envelope text-2xl cursor-pointer hover:text-gray-500 transition-colors"></i>
+          </Link>
         </div>
-    )
+        <p className="mt-4">&copy; 2023 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+  );
 }
-
-

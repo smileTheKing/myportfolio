@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <main className=" min-h-screen flex flex-col items-center justify-start mb-24">
-        <div className='container  flex  flex-col gap-12  p-24'>
+        <div className='container  flex  flex-col gap-12 mt-24 md:mt-0 md:p-24'>
           {/**Hero Component */}
           < HeroComponent />
           <SectionComponent />
