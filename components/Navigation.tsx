@@ -10,7 +10,7 @@ export default function NavigationBar({ }) {
         setOpenNav((isOpen) => !isOpen)
     }
     return (
-        <div className=" p-12 bg-slate-900 flex  overflow-hidden w-full items-center justify-center sm:max-h-[80px] flex-col z-50 fixed sm:sticky" style={{ height: openNav ? '100vh' : '80px' }}>
+        <div className=" p-12 bg-slate-900 flex  overflow-hidden w-full items-center justify-center sm:max-h-[80px] flex-col z-50 fixed sm:sticky top-0" style={{ height: openNav ? '100vh' : '80px' }}>
             <div className="md:container flex sm:flex-row  gap-x-4 justify-center w-full items-center">
             <Link href={'/'} className=" text-white  mr-auto font-bold text-xl" >Solomon</Link>
 
