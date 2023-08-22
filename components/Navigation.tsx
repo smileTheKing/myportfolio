@@ -10,7 +10,7 @@ export default function NavigationBar({ }) {
         setOpenNav((isOpen) => !isOpen)
     }
     return (
-        <div className=" p-12 bg-slate-900 flex  overflow-hidden w-full items-center justify-center sm:max-h-[80px] flex-col z-50 fixed sm:sticky top-0" style={{ height: openNav ? '100vh' : '80px' }}>
+        <div className="p-8 md:px-8 md:py-12  bg-slate-900 flex md:justify-center  overflow-hidden w-full items-center justify-center sm:max-h-[80px] flex-col z-50 fixed  top-0" >
             <div className="md:container flex sm:flex-row  gap-x-4 justify-center w-full items-center">
             <Link href={'/'} className=" text-white  mr-auto font-bold text-xl" >Solomon</Link>
 
@@ -22,15 +22,17 @@ export default function NavigationBar({ }) {
 
                 </ul>
                 <button className=" text-white sm:hidden " onClick={handleToggle} >{openNav ? <X color="#fff" size={30} /> : <MenuIcon color="#fff" size={30} />}</button>
+
+                <div>
+               
             </div>
-            <div>
-                {openNav && <ul className=" text-white sm:hidden text-lg mt-8 space-y-4 h-screen w-screen justify-strart items-center flex flex-col bg-black" >
+            </div>
+            {openNav && <ul className=" text-white sm:hidden text-lg mt-8 space-y-4 h-screen w-screen justify-strart items-center flex flex-col  bg-inherit" >
                     <Link className=" hover:scale-90 transition  ease-lineart" href={"/project"} onClick={()=> setOpenNav(false)}>Project</Link>
                     <Link className=" hover:scale-90 transition  ease-lineart" href={"/about"} onClick={()=> setOpenNav(false)}>About</Link>
                     <Link className=" hover:scale-90 transition  ease-lineart" href={"/contact"} onClick={()=> setOpenNav(false)}>Contact</Link>
                 </ul>
                 }
-            </div>
         </div>
     )
 }
