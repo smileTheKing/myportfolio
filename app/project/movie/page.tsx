@@ -1,4 +1,5 @@
 import App from '@/classProjects/MovieApp/App'
+
 import React from 'react'
 
 const page = () => {
