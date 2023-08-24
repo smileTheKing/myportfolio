@@ -6,8 +6,8 @@ import ContainerComponent from './component/ContainerComponent'
 
 
 
-const App = () => {
+const AppMovie = () => {
     return <ContainerComponent/>
 }
 
-export default App
+export default  AppMovie
