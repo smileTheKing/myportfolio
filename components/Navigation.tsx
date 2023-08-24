@@ -27,7 +27,7 @@ export default function NavigationBar({ }) {
                
             </div>
             </div>
-            {openNav && <ul className=" text-white sm:hidden text-lg mt-8 space-y-4 h-screen w-screen justify-strart items-center flex flex-col  bg-inherit" >
+            {openNav && <ul className=" text-white sm:hidden text-lg mt-8 space-y-4 h-screen w-screen justify-strart items-center flex flex-col bg-inherit" >
                     <Link className=" hover:scale-90 transition  ease-lineart" href={"/project"} onClick={()=> setOpenNav(false)}>Project</Link>
                     <Link className=" hover:scale-90 transition  ease-lineart" href={"/about"} onClick={()=> setOpenNav(false)}>About</Link>
                     <Link className=" hover:scale-90 transition  ease-lineart" href={"/contact"} onClick={()=> setOpenNav(false)}>Contact</Link>
