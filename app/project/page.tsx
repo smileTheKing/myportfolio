@@ -10,7 +10,7 @@ export default function page() {
       <h1 className=' font-bold text-4xl p-4'> Projects</h1>
 
       <div className='container   h-full  sm:flex-row gap-4 py-24 mt-12   bg-slate-200 flex-1  grid  md:grid-flow-col md:grid-rows-3 md:grid-cols-3  grid-flow-row  grid-rows-1 grid-cols-1 md:rounded-lg'>
-        <Link href={'/project/movie'}>
+        <Link href={'/movie'}>
         <div className=' min-w-[200px] h-[150px] bg-white items-center flex justify-center rounded-lg shadow-xl font-bold text-[2ch] p-4'>
             Movie App
           </div>
