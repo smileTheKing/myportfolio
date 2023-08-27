@@ -6,11 +6,6 @@ import ContainerComponent from '@/classProjects/MovieApp/component/ContainerComp
 import React from 'react'
 
 export default function page  (){
-  return (
-    <main className=" min-h-screen flex flex-col items-center justify-start my-24 w-full">
-       <ContainerComponent/> 
-    </main>
- 
-  )
+  return <ContainerComponent/> 
 }
 

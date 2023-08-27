@@ -3,13 +3,16 @@ import React from 'react'
 const GenreComponent = (props:any) => {
   const { name, description, movieTitle1, movieTitle2 } = props;
   return (
-    <div className="flex flex-col h-full gap-4  p-8">
-      <h1 className=' font-bold'>{name}</h1>
-      <h2>{description}</h2>
-      <ul className=' flex flex-col h-full gap-4'>
-        <li>{movieTitle1}</li>
-        <li>{movieTitle2}</li>
-      </ul>
+    <div className="flex flex-col min-h-screen w-screen items-start gap-4">
+      <div className="p-4">
+      <h1 className=' font-bold text-3xl text-slate-800'>{name}</h1>
+      <h2 className=' font-bold text-slate-700'>{description}</h2>
+      </div>
+      
+      <div className='flex flex-col h-full w-full items-start p-4 gap-4'>
+        <div className='max-w-[50%]'>{movieTitle1}</div>
+        <div className='min-w-[50%] '>{movieTitle2}</div>
+      </div>
     </div>
   )
 }
