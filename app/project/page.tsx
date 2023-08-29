@@ -25,7 +25,7 @@ export default function page() {
 
         <Link href={'/movie'}>
         <div className='  max-w-[400px] h-[150px] bg-white items-center flex justify-center rounded-lg shadow-xl font-bold text-[2ch] p-4 relative overflow-hidden' style={{ maxHeight:300}}>
-          <Image src={require('../../public/shopping.jpeg')} width={400} height={200} alt={'f'} className=' absolute overflow-hidden'/>
+          <Image src={require('../../public/shopping.jpeg')} width={400} height={200} alt={'pic'} className=' absolute overflow-hidden'/>
           <h2 className=' text-white shadow-xl relative z-20'>
           Shopping App
           </h2>
